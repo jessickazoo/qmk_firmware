@@ -16,8 +16,8 @@
 
 #pragma once
 
-#include "quantum.h"
-#include "process_unicode_common.h"
+#include <stdbool.h>
+#include <stdint.h>
+#include "action.h"
 
-void unicode_map_input_error(void);
-bool process_unicode_map(uint16_t keycode, keyrecord_t *record);
+bool process_unicodemap(uint16_t keycode, keyrecord_t *record);
